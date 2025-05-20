@@ -1,0 +1,48 @@
+<div class="limiter animate__animated animate__bounce animate__lightSpeedInRight">
+    <div class="container-login100">
+        <div class="wrap-login100 p-t-50 p-b-90">
+            <form [formGroup]="form_group" (ngSubmit)="guardar()" class="login100-form validate-form flex-sb flex-w">
+                <span class="login100-form-title p-b-51">Crear nueva cuenta</span>
+                <div class="wrap-input100 m-b-16">
+                    <input class="input100" type="text" name="nombre" formControlName="nombre"
+                        [class.is-invalid]="validacionNombre" placeholder="Nombre Completo" autocomplete="on">
+                    <small *ngIf="validacionNombre" class="text-danger">Ingrese el nombre y cerciórese que tenga más de
+                        5 caracteres.</small>
+                </div>
+                <div class="wrap-input100 m-b-16">
+                    <input class="input100" type="text" name="usuario" formControlName="usuario"
+                        [class.is-invalid]="validacionUsuario" placeholder="Nombre Usuario" autocomplete="on">
+                    <small *ngIf="validacionUsuario" class="text-danger">Ingrese el nombre de usuario.</small>
+                </div>
+                <div class="wrap-input100 m-b-16">
+                    <input class="input100" type="email" name="email" formControlName="email"
+                        [class.is-invalid]="validacionEmail" placeholder="Email" autocomplete="on">
+                    <small *ngIf="validacionEmail" class="text-danger">Ingrese el email.</small>
+                </div>
+                <div class="wrap-input100 m-b-16" data-validate="Password is required">
+                    <input class="input100" type="password" name="password" formControlName="password"
+                        [class.is-invalid]="validacionContrasena" placeholder="Password" autocomplete="on">
+                    <small *ngIf="validacionContrasena" class="text-danger">Ingrese la contraseña.</small>
+                </div>
+                <div class="wrap-input100 m-b-16" data-validate="Password is required">
+                    <input class="input100" type="password" name="confirmar_password" formControlName="confirmar_password"
+                        [class.is-invalid]="validacionContrasena" placeholder="Password" autocomplete="on">
+                    <small *ngIf="validacionContrasena" class="text-danger">Confirmar la contraseña.</small>
+                </div>
+                <div class="flex-sb-m w-full p-t-3 p-b-24">
+                    <div class="contact100-form-checkbox">
+                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me"
+                            formControlName="recordarUsuario">
+                        <label class="label-checkbox100" for="ckb1">Recordar mi usuario</label>
+                    </div>
+                    <div>
+                        <a routerLink="/login" class="txt1">¿Ya tienes cuenta? / Ingresar</a>
+                    </div>
+                </div>
+                <div class="container-login100-form-btn m-t-17">
+                    <button class="btn btn-primary" type="submit">Crear cuenta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

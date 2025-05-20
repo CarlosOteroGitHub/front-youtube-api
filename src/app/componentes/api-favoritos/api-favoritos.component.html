@@ -1,0 +1,36 @@
+<app-header>
+    <!-- AQUI SE EJECUTA EL CODIGO HTML DEL ARCHIVO: src\app\componentes\header\header.component.html -->
+</app-header>
+
+<div class="container">
+    <h1><small>Lista de Favoritos</small></h1>
+    <hr>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" *ngFor="let columna of columns_array">{{ columna }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let elemento of videos_fav_array; let i = index">
+                <td scope="row">{{ i + 1 }}</td>
+                <td scope="row">{{ elemento.title }}</td>
+                <td scope="row">{{ elemento.publishedAt | date }}</td>
+                <td>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-info" (click)="mostrarVideo(elemento)">Ver Video</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-danger" (click)="eliminarVideo(elemento.id)">Eliminar</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<app-footer>
+    <!-- AQUI SE EJECUTA EL CODIGO HTML DEL ARCHIVO: src\app\componentes\footer\footer.component.html -->
+</app-footer>

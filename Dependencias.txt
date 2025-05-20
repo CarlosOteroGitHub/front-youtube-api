@@ -1,0 +1,19 @@
+========================================================== DEPENDENCIAS UTILIZADAS ==========================================================
+
+° Microsoft Windows 10.
+
+° Google Chrome.
+
+° Visual Studio Code.
+
+° HTML.
+
+° CSS.
+
+° Bootstrap.
+
+° Typescript.
+
+° Angular.
+
+° NPM.

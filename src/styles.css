@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+body {
+    float: left;
+    width: 100%;
+}
+footer {
+    float: left;
+    width: 100%;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+}

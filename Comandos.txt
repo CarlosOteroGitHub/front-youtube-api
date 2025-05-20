@@ -1,0 +1,21 @@
+========================================================== COMANDOS ==========================================================
+
+° npm install -g @angular/cli: Comando utilizado para instalar la ultima version de Angular.
+
+° ng version: Comando utilizado para mostrar la versión actual de Angular.
+
+° ng new [nombre_proyecto]: Comando utilizado para crear un proyecto de Angular.
+
+° ng g c componentes/[nombre_componente]: Comando utilizado para crear componentes.
+
+° ng g s servicios/[nombre_servicio]: Comando utilizado para crear servicios.
+
+° ng g p pipes/[nombre_pipe]: Comando utilizado para crear pipes personalizados.
+
+° ng g guard guards/[nombre_guard]: Comando utilizado para crear guards personalizados.
+
+° npm install: Comando utilizado para reinstalar las dependencias existentes en un proyecto de angular.
+
+° npm install sweetalert2@v9.11.0: Comando utilizado para instalar la libreria sweetalert.
+
+° ng serve: Comando utilizado para hacer correr el servidor de Angular. El servidor corre por defecto en el navegador con la dirección localhost:4200
